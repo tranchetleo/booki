@@ -12,28 +12,27 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/3e047ce8ea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="main-container">
         <header>
             <div class="logo-container">
-                <img src="images/logo/Booki.png" alt="Logo de Booki">
+                <a href="">
+                    <img src="images/logo/Booki.png" alt="Logo de Booki">                
+                </a>
             </div>
             <nav>
                 <ul>
                     <li>
                         <a href="">
-                            <button>
-                                Hébergements
-                            </button>
+                            Hébergements
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <button>
-                                Activités
-                            </button>
+                            Activités
                         </a>
                     </li>
                 </ul>
@@ -46,14 +45,41 @@
                     <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div>
+                <div class="search-div">
                     <form action="" class="search-bar">
                         <div class="search-icon">
-                            <img src="https://img.icons8.com/?size=20&id=9CO30zOMqyXJ&format=png&color=000000" alt="">
+                            <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
                         </div>
                         <input type="text" name="" id="" class="search-input" value="Marseille, France">
                         <input type="submit" value="Rechercher" class="search-submit">
                     </form>
+                </div>
+                <div class="filter-bar">
+                    <label for="filter">Filtres</label>
+                    <div class="filter-bar">
+                        <button class="filter-btn">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            Économique
+                        </button>
+                        <button class="filter-btn">
+                            <i class="fa-solid fa-person"></i>
+                            Familiale
+                        </button>
+                        <button class="filter-btn">
+                            <i class="fa-solid fa-heart"></i>
+                            Romantique
+                        </button>
+                        <button class="filter-btn">
+                            <i class="fa-solid fa-fire"></i>
+                            Nos pépites
+                        </button>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div>
+                        <i class="fa-solid fa-info fa-2xs"></i>
+                    </div>
+                    <p class="info-txt">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
             <div class="hebergements-and-populaires">

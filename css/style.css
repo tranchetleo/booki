@@ -26,7 +26,6 @@ header {
     width: 100%;
     background-color: white;
     overflow: hidden;
-    height: 79px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,15 +33,14 @@ header {
 }
 
 header .logo-container {
-    height: 79px;
-    width: 161px;
+    padding: 2em 3em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 header .logo-container img {
-    height: 19px;
+    height: 1.5rem;
     object-fit: contain;
 }
 
@@ -58,15 +56,17 @@ header nav ul li {
     margin: 0 2em;
 }
 
-header nav ul li button {
+header nav ul li a {
+    display: block;
     padding-top: 1.5em;
     border: solid 2px transparent;   
     background-color: unset;
 }
 
-header nav ul li button:hover {
+header nav ul li a:hover {
     border-top: solid 2px #0065FC;
     color: #0065FC;
+    cursor: pointer;
 }
 
 .main-container {
@@ -113,24 +113,31 @@ a {
     margin: 2em 0;
 }
 
-.search-bar {
+.search-div {
+    display: flex;
+}
+
+.search-bar, .filter-bar {
     display: flex;
     flex-direction: row;
-    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .search-icon {
-    width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
-    border-radius: 20px 0 0 20px;
+    padding: 15px 20px;
 }
 
 .search-input {
-    border: solid 1px #F2F2F2;
+    border: solid 2px #F2F2F2;
     outline: unset;
     padding: 15px;
     font-size: large;
@@ -142,7 +149,61 @@ a {
     color: white;
     border: none;
     padding: 15px;
-    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.filter-bar label {
+    margin-right: 0.5em;
+    font-size: large;
+}
+
+.filter-btn {
+    margin: 0 0.5em;
+    display: flex;
+    align-items: center;
+    border: solid 2px #D9D9D9;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.filter-btn:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.filter-btn i {
+    align-self: center;
+    margin-right: 0.5em;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+}
+
+.info-row > div {
+    border: solid 1px #D9D9D9;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+}
+
+.info-txt {
+    font-size: small;
 }
 
 /****** Hebergements And Populaires ***********/
