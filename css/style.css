@@ -125,6 +125,10 @@ p {
     gap: 35px;
 }
 
+.home > div > p {
+    margin-bottom: 0;
+}
+
 .search-div {
     display: flex;
 }
@@ -500,8 +504,9 @@ p {
     }
 
     header nav ul li a {
+        font-size: 19px;
         padding: 0;
-        padding-bottom: 1.5em;
+        padding-bottom: 1em;
         border-bottom: solid 2px var(--main-bg-color)
     }
 
@@ -516,9 +521,7 @@ p {
     }
 
     .home {
-        padding-top: 1em;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 20px;
     }
 
     .filter-bar .filters {
@@ -541,8 +544,6 @@ p {
     }
 
     .search-div .mobile {
-        position: absolute;
-        right: 0;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -596,9 +597,5 @@ p {
 
     .footer-container {
         grid-template-columns: 1fr;
-    }
-
-    .footer-container .about {
-        width: 100%;
     }
 }
