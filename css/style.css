@@ -76,7 +76,7 @@ header, main, footer {
 }
 
 main {
-    margin: 30px 0;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 35px;
@@ -142,6 +142,7 @@ p {
     display: flex;
     border-radius: 20px;
     overflow: hidden;
+    outline: solid 2px var(--main-bg-color);
 }
 
 .search-icon {
@@ -153,7 +154,7 @@ p {
 }
 
 .search-input {
-    border: solid 2px var(--main-bg-color);
+    border: none;
     border-right: unset;
     outline: unset;
     padding: 15px;
@@ -528,15 +529,22 @@ p {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 20px 10px;
     }
 
     .search-bar {
         width: 100%;
+        border-radius: 15px;
+        outline: solid 1px var(--main-bg-color);
+    }
+
+    .search-icon {
+        padding: 15px 19px;
     }
 
     .search-input {
         width: 100%;
+        padding: 10px 15px;
     }
 
     .search-div .desktop {
@@ -544,16 +552,21 @@ p {
     }
 
     .search-div .mobile {
-        padding: 20px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 20px;
+        border-radius: 15px;
         justify-content: center;
     }
 
     .search-div .mobile i {
         color: white;
+    }
+
+    .filter-btn {
+        font-size: 14px;
+        padding: 10px 10px;
     }
 
     .hebergements-and-populaires {
